@@ -31,4 +31,24 @@ jobs:
           yarn install --frozen-lockfile
           yarn build
           yarn test
-          
+
+  test-bash:
+    name: Test Bash
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout source files
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      # Setup BATS
+      - name: Setup BATS
+        uses: mig4/setup-bats@v1
+        with:
+          bats-version: 1.2.1
+
+      # Build and test
+      - name: Build and Test
+        working-directory: bash
+        run: |
+          chmod +x ./fail-whale.bash
+          bats ./tests/fail-whale.bats

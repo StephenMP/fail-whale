@@ -5,6 +5,6 @@ export function failWhale(message?: string, logger: any = console) {
     logger.error("▄▄▄▄█████████████")
 
     if (message) {
-        logger.error(message)
+        logger.error(`\n${message}`)
     }
 }
