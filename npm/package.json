@@ -2,7 +2,7 @@
     "name": "fail-whale",
     "author": "StephenMP",
     "description": "Easily print a fail whale",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": {
         "url": "https://github.com/StephenMP/fail-whale/tree/main/npm",
         "type": "git"

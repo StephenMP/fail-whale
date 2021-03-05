@@ -9,7 +9,7 @@
 Easily print a fail whale
 
 ```javascript
-import { failWhale } from "../fail-whale";
+import { failWhale } from 'fail-whale';
 
 // When something bad happens
 failWhale("Something went wrong :(")
