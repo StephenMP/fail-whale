@@ -24,3 +24,23 @@ Prints to console.error:
 Something went wrong :(
 */
 ```
+
+Inject your own logger (override default console.error)
+
+```javascript
+const logWarn = {
+    error: (msg: any) => console.warn(msg)
+}
+
+failWhale("Warn you instead", logWarn)
+
+/* 
+Prints to console.warn:
+▄████████████▄▐█▄▄▄▄█▌
+█████▌▄▌▄▐▐▌██▌▀▀██▀▀
+███▄█▌▄▌▄▐▐▌▀██▄▄█▌
+▄▄▄▄█████████████
+
+Warn you instead
+*/
+```

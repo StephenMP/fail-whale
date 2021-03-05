@@ -10,6 +10,5 @@
 # Build bash
 (
     cd bash
-    chmod +x fail-whale.sh
-    chmod +x tests/fail-whale-test.sh
+    chmod +x fail-whale.bash
 )
