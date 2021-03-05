@@ -3,6 +3,14 @@
     "author": "StephenMP",
     "description": "Easily print a fail whale",
     "version": "1.0.3",
+    "keywords": [
+        "fail",
+        "whale",
+        "console",
+        "logging",
+        "output",
+        "utility"
+    ],
     "repository": {
         "url": "https://github.com/StephenMP/fail-whale/tree/main/npm",
         "type": "git"
