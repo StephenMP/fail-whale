@@ -2,6 +2,7 @@
     "name": "fail-whale",
     "version": "1.0.0",
     "repository": "https://github.com/StephenMP/fail-whale/npm",
+    "license": "MIT",
     "private": false,
     "scripts": {
         "build": "rm -rf dist; tsc -p tsconfig.json;",
