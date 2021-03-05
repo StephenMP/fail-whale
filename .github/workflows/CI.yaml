@@ -50,5 +50,5 @@ jobs:
       - name: Build and Test
         working-directory: bash
         run: |
-          chmod +x ./fail-whale.sh
+          chmod +x ./fail-whale.bash
           bats ./tests/fail-whale.bats
