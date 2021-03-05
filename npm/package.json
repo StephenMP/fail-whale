@@ -1,8 +1,17 @@
 {
     "name": "fail-whale",
-    "author": "StephenMP",
+    "author": {
+        "name": "StephenMP",
+        "url": "https://stephenmp.github.io/"
+    },
+    "contributors": [
+        {
+            "name": "Barney Rubble",
+            "url": "https://github.com/spencer-zepelin"
+        }
+    ],
     "description": "Easily print a fail whale",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "fail",
         "whale",
