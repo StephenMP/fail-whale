@@ -2,7 +2,7 @@
     "name": "fail-whale",
     "author": "StephenMP",
     "description": "Easily print a fail whale",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repository": {
         "url": "https://github.com/StephenMP/fail-whale/tree/main/npm",
         "type": "git"
@@ -15,8 +15,8 @@
         "build": "rm -rf dist; tsc -p tsconfig.json;",
         "test": "jest"
     },
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "dist/fail-whale.js",
+    "types": "dist/fail-whale.d.ts",
     "devDependencies": {
         "@types/jest": "^26.0.20",
         "@types/node": "^14.14.22",
