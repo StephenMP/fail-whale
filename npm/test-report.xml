@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/sporter/Development/fail-whale/npm/src/tests/fail-whale.test.ts">
+    <testCase name="print test can print without message" duration="2"/>
+  </file>
+</testExecutions>
