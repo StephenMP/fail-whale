@@ -1,7 +1,14 @@
 {
     "name": "fail-whale",
+    "author": "StephenMP",
+    "description": "Easily print a fail whale",
     "version": "1.0.0",
-    "repository": "https://github.com/StephenMP/fail-whale/npm",
+    "repository": {
+        "url": "https://github.com/StephenMP/fail-whale/npm",
+        "type": "git"
+    },
+    "homepage": "https://github.com/StephenMP/fail-whale/npm",
+    "bugs": "https://github.com/StephenMP/fail-whale/issues",
     "license": "MIT",
     "private": false,
     "scripts": {

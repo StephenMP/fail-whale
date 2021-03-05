@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    name: Publish NPM Package
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout source files
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      # Setup Node and NPM
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      # Build and test
+      - name: Build and Test
+        working-directory: npm
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+      
+      - name: Publish
+        working-directory: npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn publish --access public . || echo 'Version already exists'
