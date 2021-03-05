@@ -1,10 +1,10 @@
-export function failWhale(message?: string) {
-    console.error("▄████████████▄▐█▄▄▄▄█▌")
-    console.error("█████▌▄▌▄▐▐▌██▌▀▀██▀▀")
-    console.error("███▄█▌▄▌▄▐▐▌▀██▄▄█▌")
-    console.error("▄▄▄▄█████████████")
+export function failWhale(message?: string, logger: any = console) {
+    logger.error("▄████████████▄▐█▄▄▄▄█▌")
+    logger.error("█████▌▄▌▄▐▐▌██▌▀▀██▀▀")
+    logger.error("███▄█▌▄▌▄▐▐▌▀██▄▄█▌")
+    logger.error("▄▄▄▄█████████████")
 
     if (message) {
-        console.error(message)
+        logger.error(message)
     }
 }
