@@ -26,6 +26,7 @@ jobs:
 
       # Build and test
       - name: Build and Test
+        working-directory: npm
         run: |
           yarn install --frozen-lockfile
           yarn build
