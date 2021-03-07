@@ -47,3 +47,4 @@ jobs:
           PROJECT_FILE_PATH: ./dotnet/FailWhale/FailWhale.csproj
           TAG_COMMIT: false
           NUGET_KEY: ${{ secrets.NUGET_TOKEN }}
+          VERSION_STATIC: 1.0.0
