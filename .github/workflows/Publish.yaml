@@ -2,11 +2,6 @@ name: Publish
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: "Semver"
-        required: true
-        default: "1.0.0"
 
 jobs:
   publish-npm:
@@ -35,7 +30,7 @@ jobs:
         working-directory: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --access public --new-version ${{ github.event.inputs.version }} .
+        run: yarn publish --access public .
 
   publish-dontnet:
     name: Publish NuGet Package
@@ -52,4 +47,3 @@ jobs:
           PROJECT_FILE_PATH: ./dotnet/FailWhale/FailWhale.csproj
           TAG_COMMIT: false
           NUGET_KEY: ${{ secrets.NUGET_TOKEN }}
-          VERSION_STATIC: ${{ github.event.inputs.version }}
