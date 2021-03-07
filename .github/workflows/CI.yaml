@@ -52,3 +52,16 @@ jobs:
         run: |
           chmod +x ./fail-whale.bash
           bats ./tests/fail-whale.bats
+
+  test-dotnet:
+    name: Test Dotnet
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout source files
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      - name: Build and Test
+        working-directory: dotnet
+        run: |
+          dotnet test ./FailWhale.sln

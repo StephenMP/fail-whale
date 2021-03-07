@@ -1,9 +1,0 @@
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\bin\Debug\netcoreapp3.1\FailWhale.deps.json
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\bin\Debug\netcoreapp3.1\FailWhale.dll
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\bin\Debug\netcoreapp3.1\FailWhale.pdb
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.csprojAssemblyReference.cache
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.AssemblyInfoInputs.cache
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.AssemblyInfo.cs
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.csproj.CoreCompileInputs.cache
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.dll
-C:\Users\Stephen\Development\fail-whale\dotnet\FailWhale\obj\Debug\netcoreapp3.1\FailWhale.pdb
