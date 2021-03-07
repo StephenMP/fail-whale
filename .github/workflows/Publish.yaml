@@ -30,7 +30,7 @@ jobs:
         working-directory: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --access public .
+        run: yarn publish --access public . || echo 'Version already exists'
 
   publish-dontnet:
     name: Publish NuGet Package
