@@ -35,7 +35,7 @@ jobs:
         working-directory: npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --access public --new-version ${{ github.event.inputs }} .
+        run: yarn publish --access public --new-version ${{ github.event.inputs.version }} .
 
   publish-dontnet:
     name: Publish NuGet Package
@@ -52,4 +52,4 @@ jobs:
           PROJECT_FILE_PATH: ./dotnet/FailWhale/FailWhale.csproj
           TAG_COMMIT: false
           NUGET_KEY: ${{ secrets.NUGET_TOKEN }}
-          VERSION_STATIC: ${{ github.event.inputs }}
+          VERSION_STATIC: ${{ github.event.inputs.version }}
