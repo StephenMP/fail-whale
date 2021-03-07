@@ -36,6 +36,16 @@ function testBash() {
     )
 }
 
+function testDotnet() {
+    echo "==========="
+    echo "Test dotnet"
+    echo "==========="
+    (
+        cd dotnet
+        dotnet test ./FailWhale.sln
+    )
+}
+
 function build() {
     ./build.sh > /dev/null &
     spinner "Building" $!
@@ -43,10 +53,10 @@ function build() {
 
 function main() {
     testNpm
-
     echo
-
     testBash
+    echo
+    testDotnet
 }
 
 main
