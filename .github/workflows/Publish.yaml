@@ -31,3 +31,19 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn publish --access public . || echo 'Version already exists'
+
+  publish-dontnet:
+    name: Publish NuGet Package
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout source files
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      - name: Publish
+        id: publish_nuget
+        uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: ./dotnet/FailWhale/FailWhale.csproj
+          TAG_COMMIT: false
+          NUGET_KEY: ${{ secrets.NUGET_TOKEN }}
