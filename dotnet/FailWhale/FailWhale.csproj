@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/StephenMP/fail-whale/tree/main/dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>fail, whale, console, logging, output, utility</PackageTags>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageId>FailWhale</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
