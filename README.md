@@ -7,6 +7,10 @@
 ![npm](https://img.shields.io/npm/v/fail-whale)
 ![npm](https://img.shields.io/npm/dt/fail-whale)
 
+## NuGet Package
+![Nuget](https://img.shields.io/nuget/v/FailWhale)
+![Nuget](https://img.shields.io/nuget/dt/FailWhale)
+
 ## Description
 ```shell
 ▄████████████▄▐█▄▄▄▄█▌
