@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "INi1Ydz6TtojKPiOdtFukSjDzFpXyIhvXbQiUPeq6SPMxsuGx7uSl52OONLt1Ou9Pnejld6wq7lKfHipeb47sg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Stephen\\Development\\fail-whale\\dotnet\\FailWhale\\FailWhale.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stephen\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

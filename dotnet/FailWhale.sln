@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FailWhale", "FailWhale\FailWhale.csproj", "{CEBAF551-A928-470E-884C-4CB33FCE3D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FailWhale.Test", "FailWhale.Test\FailWhale.Test.csproj", "{7DB5CA50-5061-448A-948B-E81DE9D04D61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEBAF551-A928-470E-884C-4CB33FCE3D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBAF551-A928-470E-884C-4CB33FCE3D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBAF551-A928-470E-884C-4CB33FCE3D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBAF551-A928-470E-884C-4CB33FCE3D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB5CA50-5061-448A-948B-E81DE9D04D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB5CA50-5061-448A-948B-E81DE9D04D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB5CA50-5061-448A-948B-E81DE9D04D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB5CA50-5061-448A-948B-E81DE9D04D61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC6DEFB6-99B8-4F0C-BCA3-63F078132945}
+	EndGlobalSection
+EndGlobal
