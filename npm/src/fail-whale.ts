@@ -1,4 +1,8 @@
-export function failWhale(message?: string, logger: any = console) {
+interface ValidLogger {
+    error: (msg: string) => any
+}
+
+export function failWhale(message?: string, logger: ValidLogger = console) {
     logger.error("▄████████████▄▐█▄▄▄▄█▌")
     logger.error("█████▌▄▌▄▐▐▌██▌▀▀██▀▀")
     logger.error("███▄█▌▄▌▄▐▐▌▀██▄▄█▌")
