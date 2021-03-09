@@ -22,127 +22,27 @@ namespace FailWhale.Logging
         public static void FailWhale(this ILogger logger, string message = null)
         {
             message = FailWhaleBuilder.GetFailWhaleOutput(message);
-            switch(LogLevel)
-            {
-                case LogLevel.Critical:
-                    logger.LogCritical(message);
-                    break;
-                case LogLevel.Debug:
-                    logger.LogDebug(message);
-                    break;
-                case LogLevel.Error:
-                    logger.LogError(message);
-                    break;
-                case LogLevel.Information:
-                    logger.LogInformation(message);
-                    break;
-                case LogLevel.Trace:
-                    logger.LogTrace(message);
-                    break;
-                case LogLevel.Warning:
-                    logger.LogWarning(message);
-                    break;
-            }
+            logger.Log(LogLevel, message);
         }
        
-        public static void FailWhale(this ILogger logger, string message, params object[] args) {
+        public static void FailWhale(this ILogger logger, string message = null, params object[] args) {
             message = FailWhaleBuilder.GetFailWhaleOutput(message);
-            switch (LogLevel)
-            {
-                case LogLevel.Critical:
-                    logger.LogCritical(message, args);
-                    break;
-                case LogLevel.Debug:
-                    logger.LogDebug(message, args);
-                    break;
-                case LogLevel.Error:
-                    logger.LogError(message, args);
-                    break;
-                case LogLevel.Information:
-                    logger.LogInformation(message, args);
-                    break;
-                case LogLevel.Trace:
-                    logger.LogTrace(message, args);
-                    break;
-                case LogLevel.Warning:
-                    logger.LogWarning(message, args);
-                    break;
-            }
+            logger.Log(LogLevel, message, args);
         }
 
-        public static void FailWhale(this ILogger logger, Exception exception, string message, params object[] args) {
+        public static void FailWhale(this ILogger logger, Exception exception, string message = null, params object[] args) {
             message = FailWhaleBuilder.GetFailWhaleOutput(message);
-            switch (LogLevel)
-            {
-                case LogLevel.Critical:
-                    logger.LogCritical(exception, message, args);
-                    break;
-                case LogLevel.Debug:
-                    logger.LogDebug(exception, message, args);
-                    break;
-                case LogLevel.Error:
-                    logger.LogError(exception, message, args);
-                    break;
-                case LogLevel.Information:
-                    logger.LogInformation(exception, message, args);
-                    break;
-                case LogLevel.Trace:
-                    logger.LogTrace(exception, message, args);
-                    break;
-                case LogLevel.Warning:
-                    logger.LogWarning(exception, message, args);
-                    break;
-            }
+            logger.Log(LogLevel, exception, message, args);
         }
 
-        public static void FailWhale(this ILogger logger, EventId eventId, Exception exception, string message, params object[] args) {
+        public static void FailWhale(this ILogger logger, EventId eventId, Exception exception, string message = null, params object[] args) {
             message = FailWhaleBuilder.GetFailWhaleOutput(message);
-            switch (LogLevel)
-            {
-                case LogLevel.Critical:
-                    logger.LogCritical(eventId, exception, message, args);
-                    break;
-                case LogLevel.Debug:
-                    logger.LogDebug(eventId, exception, message, args);
-                    break;
-                case LogLevel.Error:
-                    logger.LogError(eventId, exception, message, args);
-                    break;
-                case LogLevel.Information:
-                    logger.LogInformation(eventId, exception, message, args);
-                    break;
-                case LogLevel.Trace:
-                    logger.LogTrace(eventId, exception, message, args);
-                    break;
-                case LogLevel.Warning:
-                    logger.LogWarning(eventId, exception, message, args);
-                    break;
-            }
+            logger.Log(LogLevel, eventId, exception, message, args);
         }
 
-        public static void FailWhale(this ILogger logger, EventId eventId, string message, params object[] args) {
+        public static void FailWhale(this ILogger logger, EventId eventId, string message = null, params object[] args) {
             message = FailWhaleBuilder.GetFailWhaleOutput(message);
-            switch (LogLevel)
-            {
-                case LogLevel.Critical:
-                    logger.LogCritical(eventId, message, args);
-                    break;
-                case LogLevel.Debug:
-                    logger.LogDebug(eventId, message, args);
-                    break;
-                case LogLevel.Error:
-                    logger.LogError(eventId, message, args);
-                    break;
-                case LogLevel.Information:
-                    logger.LogInformation(eventId, message, args);
-                    break;
-                case LogLevel.Trace:
-                    logger.LogTrace(eventId, message, args);
-                    break;
-                case LogLevel.Warning:
-                    logger.LogWarning(eventId, message, args);
-                    break;
-            }
+            logger.Log(LogLevel, eventId, message, args);
         }
     }
 }
