@@ -65,3 +65,16 @@ jobs:
         working-directory: dotnet
         run: |
           dotnet test ./FailWhale.sln
+
+  test-rust:
+    name: Test Rust
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout source files
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      - name: Build and Test
+        working-directory: rust
+        run: |
+          cargo test
