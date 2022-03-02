@@ -24,3 +24,4 @@ Easily print a fail whale
 Quick Docs
 - [NPM](./npm)
 - [Bash](./bash)
+- [Rust](./rust)
